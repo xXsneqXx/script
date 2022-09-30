@@ -1,0 +1,89 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("sneqHUB", "Serpent")
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewToggle("Super-Human", "Go Fast And Jump High!", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+MainSection:NewButton("Arsenal Script", "(With KeySystem)", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/scripter4863/KeySystem/main/KeySystem.lua"))()'))()
+end)
+
+MainSection:NewButton("AntiAfk", "No kick when Afk", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()"))()'))()
+end)
+
+MainSection:NewButton("Chat Bypass", "Can Chat everything Like Nigga idk its working", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()"))()'))()
+end)
+
+MainSection:NewButton("Kraken Hub", "Good Hub", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/Kraken_Hub.txt", true))()", true))()"))()'))()
+end)
+
+--LOCAL PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "SPEEDY!!!", 500, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "JUMP HIGH!!!", 350, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset WS/JP", "RESET TO THE DEAFULT WALKSPEED/JUMPPOWER", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+
+--Games
+local Games = Window:NewTab("Games")
+local GamesSection = Games:NewSection("Games")
+
+--Others
+local Others = Window:NewTab("Others")
+local OthersSection = Others:NewSection("Others")
+
+
+--Misc
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Misc")
+
+
+OthersSection:NewButton("Dance Animation Emote (R15)", "Roblox Free Animation", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()", true))()"))()'))()
+end)
+
+PlayerSection:NewButton("Fly Gui", "Like a Bird", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://pastebin.com/Dg2WFaMU", true))()"))()'))()
+end)
+
+OthersSection:NewButton("Chat Bypasser", "Just Chat Something and its work", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://controlc.com/c2074da9", true))()"))()'))()
+end)
+
+OthersSection:NewButton("Chat Bypasser V2", "U Can Chat what u want", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/C...", true))()", true))()"))()'))()
+end)
+
+OthersSection:NewButton("Universal SlientAim Gui", "Aimbot Script", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()", true))()", true))()"))()'))()
+end)
+
+GamesSection:NewButton("Blox Fruit Gui", "HoHo Hub (Best Gui For me)", function()
+    loadstring(game:HttpGet('loadstring(game:HttpGet("https://pastebin.com/gJkF2H5m", true))()", true))()"))()'))()
+end)
